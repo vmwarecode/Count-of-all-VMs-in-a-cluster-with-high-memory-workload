@@ -1,0 +1,12 @@
+{"a8840c76-fd71-4056-baf8-f20334c49aa0": {
+   "resourceKinds": [{
+      "resourceKindKey": "ClusterComputeResource",
+      "adapterKindKey": "VMWARE"
+   }],
+   "modificationTime": 1641932823317,
+   "name": "VMs with high memory workload",
+   "formula": "count(${adaptertype=VMWARE,objecttype=VirtualMachine, attribute=mem|workload, depth=5, where=($value>98)})",
+   "description": "Count of VM's in cluster with high memory workload percentage",
+   "unitId": "",
+   "modifiedBy": "fb83b06a-81b4-4c5f-9819-b498367c9fac"
+}}
